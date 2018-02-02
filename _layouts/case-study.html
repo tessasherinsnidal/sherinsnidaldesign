@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div itemscope itemtype="https://schema.org/Creativework" class="bgimg-{{page.img}}">
+  <div class="caption">
+    <p itemprop="name" class="giga border">{{page.header}}</p>
+  </div>
+  <div class="caption2">
+    <p itemprop="about" class="mega border w3-opacity-min">{{page.type}}</p>
+  </div>
+</div>
+
+<div itemscope itemtype="https://schema.org/Creativework" class="bgimg-{{page.img}}">
+  <div itemscope itemtype="https://schema.org/Person" class="info">
+    <div class="">
+      <h2 itemprop="name" class="title kilo">Why?</h2>
+      <p itemprop="description" class="about micro">{{page.about}}</p>
+    </div>
+  </div>
+
+  <section itemscope itemtype="https://schema.org/Creativework" >
+
+    {{content}}
+
+  </section>
+</div>
